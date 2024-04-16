@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Planner</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <div class="header">Travel Planner</div>
+  <div class="content">
+    
+    <div class="input-row">
+      <div class="input-group">
+        <label for="cityInput">City</label>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+      </div>
+
+      <div class="input-group">
+        <label for="startDate">Start Date</label>
+        <input type="date" id="startDate">
+      </div>
+
+      <div class="input-group">
+        <label for="endDate">End Date</label>
+        <input type="date" id="endDate">
+      </div>
+      <button id="add-trip-button" class="add-trip-button" type="button" onclick="">Add Trip</button>
+    </div>
+    <div class="trip-info">
+      <div class="trip-details">
+        <h2 id="trip-title">My trip to:</h2>
+        <p id="trip-departing">Departing:</p>
+        <p id="trip-countdown"></p>
+        <p>Typical weather for then is:</p>
+        <p id="trip-weather"></p>
+        <p id="trip-description"></p>
+      </div>
+      <div class="trip-image">
+        <!-- The image src attribute should point to the actual image file -->
+        <img id="trip-image" alt="Destination Image" />
+      </div>
+      <!-- Button container -->
+      <div class="button-container">
+        <button class="button button-save" id="save-trip-button">save trip</button>
+        <button class="button button-remove" id="remove-trip-button">remove trip</button>
+      </div>
+</div>
+
+</body>
+</html>

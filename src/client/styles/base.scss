@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.result-item {
+    margin-bottom: 10px;
+}
+
+.result-item label {
+    margin-right: 10px;
+}
+
+.result-item input {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    /* Makes the disabled input look better */
+    color: #666;
+}
